@@ -1,0 +1,442 @@
+
+/* =========================================================
+   Material 3 → Bootstrap 5
+   Esqueleto base (tema claro)
+   ====================================================== */
+
+:root {
+  /* ===== COLORES M3 SIMPLIFICADOS (LIGHT) ===== */
+  --md-sys-color-primary:       #6750A4;
+  --md-sys-color-on-primary:    #FFFFFF;
+  --md-sys-color-primary-container: #EADDFF;
+  --md-sys-color-on-primary-container: #21005D;
+
+  --md-sys-color-secondary:     #625B71;
+  --md-sys-color-on-secondary:  #FFFFFF;
+
+  --md-sys-color-tertiary:      #7D5260;
+  --md-sys-color-on-tertiary:   #FFFFFF;
+
+  --md-sys-color-error:         #B3261E;
+  --md-sys-color-on-error:      #FFFFFF;
+
+  --md-sys-color-background:    #FFFBFE;
+  --md-sys-color-on-background: #1C1B1F;
+
+  --md-sys-color-surface:       #FFFBFE;
+  --md-sys-color-on-surface:    #1C1B1F;
+  --md-sys-color-surface-variant: #E7E0EC;
+  --md-sys-color-outline:       #79747E;
+
+  /* ===== TIPOGRAFÍA (puedes cambiar por Roboto, etc.) ===== */
+  --md-sys-typescale-font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --md-sys-typescale-body-large-size:   1rem;    /* 16px */
+  --md-sys-typescale-body-medium-size:  0.875rem;/* 14px */
+  --md-sys-typescale-title-medium-size: 1rem;    /* 16px */
+  --md-sys-typescale-title-large-size:  1.25rem; /* 20px */
+  --md-sys-typescale-headline-small-size: 1.5rem;/* 24px */
+
+  /* ===== RADIOS (SHAPES) M3 ===== */
+  --md-sys-shape-corner-extra-small: 4px;
+  --md-sys-shape-corner-small:       8px;
+  --md-sys-shape-corner-medium:      12px;
+  --md-sys-shape-corner-large:       16px;
+  --md-sys-shape-corner-extra-large: 28px;
+
+  /* ===== ESPACIADO BASE ===== */
+  --md-sys-spacing-base: 8px;
+
+  /* =========================================================
+     MAPEO A VARIABLES DE BOOTSTRAP
+     ====================================================== */
+
+  /* Colores base Bootstrap */
+  --bs-body-bg:           var(--md-sys-color-background);
+  --bs-body-color:        var(--md-sys-color-on-background);
+
+  --bs-primary:           var(--md-sys-color-primary);
+  --bs-primary-rgb:       103, 80, 164;
+
+  --bs-secondary:         var(--md-sys-color-secondary);
+  --bs-secondary-rgb:     98, 91, 113;
+
+  --bs-success:           #386A20;
+  --bs-success-rgb:       56, 106, 32;
+
+  --bs-info:              #00639B;
+  --bs-info-rgb:          0, 99, 155;
+
+  --bs-warning:           #FFB300;
+  --bs-warning-rgb:       255, 179, 0;
+
+  --bs-danger:            var(--md-sys-color-error);
+  --bs-danger-rgb:        179, 38, 30;
+
+  --bs-light:             #F5F0FF;
+  --bs-light-rgb:         245, 240, 255;
+  --bs-dark:              #1C1B1F;
+  --bs-dark-rgb:          28, 27, 31;
+
+  /* Texto / links */
+  --bs-link-color:        var(--md-sys-color-primary);
+  --bs-link-hover-color:  #46307c;
+
+  --bs-heading-color:     var(--md-sys-color-on-background);
+
+  /* Bordes y outline */
+  --bs-border-color:      var(--md-sys-color-outline);
+
+  /* Radios (forma M3-ish) */
+  --bs-border-radius-sm:  var(--md-sys-shape-corner-extra-small);
+  --bs-border-radius:     var(--md-sys-shape-corner-small);
+  --bs-border-radius-lg:  var(--md-sys-shape-corner-medium);
+  --bs-border-radius-xl:  var(--md-sys-shape-corner-large);
+  --bs-border-radius-xxl: var(--md-sys-shape-corner-extra-large);
+
+  /* Sombra suave tipo Material */
+  --bs-box-shadow-sm:  0 1px 3px rgba(0, 0, 0, 0.18);
+  --bs-box-shadow:     0 2px 6px rgba(0, 0, 0, 0.20);
+  --bs-box-shadow-lg:  0 4px 12px rgba(0, 0, 0, 0.22);
+
+  /* Tipografía global Bootstrap */
+  --bs-body-font-family:  var(--md-sys-typescale-font-family);
+  --bs-body-font-size:    var(--md-sys-typescale-body-large-size);
+}
+
+/* =========================================================
+   Tema oscuro Material 3 → Bootstrap 5
+   Se aplica cuando <html data-bs-theme="dark">
+   ====================================================== */
+
+:root[data-bs-theme="dark"] {
+  /* Colores M3 (DARK) simplificados */
+  --md-sys-color-primary:       #D0BCFF;
+  --md-sys-color-on-primary:    #381E72;
+  --md-sys-color-primary-container: #4F378B;
+  --md-sys-color-on-primary-container: #EADDFF;
+
+  --md-sys-color-secondary:     #CCC2DC;
+  --md-sys-color-on-secondary:  #332D41;
+
+  --md-sys-color-tertiary:      #EFB8C8;
+  --md-sys-color-on-tertiary:   #492532;
+
+  --md-sys-color-error:         #F2B8B5;
+  --md-sys-color-on-error:      #601410;
+
+  --md-sys-color-background:    #1C1B1F;
+  --md-sys-color-on-background: #E6E1E5;
+
+  --md-sys-color-surface:       #1C1B1F;
+  --md-sys-color-on-surface:    #E6E1E5;
+  --md-sys-color-surface-variant: #49454F;
+  --md-sys-color-outline:       #938F99;
+
+  /* Mapeo a Bootstrap en dark */
+  --bs-body-bg:           var(--md-sys-color-background);
+  --bs-body-color:        var(--md-sys-color-on-background);
+
+  --bs-primary:           var(--md-sys-color-primary);
+  --bs-primary-rgb:       208, 188, 255;
+
+  --bs-secondary:         var(--md-sys-color-secondary);
+  --bs-secondary-rgb:     204, 194, 220;
+
+  --bs-danger:            var(--md-sys-color-error);
+  --bs-danger-rgb:        242, 184, 181;
+
+  --bs-border-color:      var(--md-sys-color-outline);
+
+  --bs-link-color:        var(--md-sys-color-primary);
+  --bs-link-hover-color:  #f3e3ff;
+
+  --bs-heading-color:     var(--md-sys-color-on-background);
+}
+
+
+/* ============================================
+   BOTONES – Material 3 sobre clases Bootstrap
+   ========================================= */
+
+/* Filled button: .btn-primary */
+.btn.btn-primary {
+  background-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  border: none;
+  border-radius: var(--md-sys-shape-corner-small);
+  padding-inline: 1.25rem;
+  padding-block: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  box-shadow: var(--bs-box-shadow);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.btn.btn-primary:hover {
+  background-color: var(--md-sys-color-primary);
+  filter: brightness(0.96);
+  box-shadow: var(--bs-box-shadow-lg);
+}
+
+.btn.btn-primary:active {
+  background-color: var(--md-sys-color-primary);
+  filter: brightness(0.92);
+  box-shadow: var(--bs-box-shadow-sm);
+}
+
+.btn.btn-primary:focus-visible {
+  outline: 2px solid var(--md-sys-color-primary);
+  outline-offset: 2px;
+}
+
+/* Tonal button: usar .btn-secondary */
+.btn.btn-secondary {
+  background-color: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary-container);
+  border: none;
+  border-radius: var(--md-sys-shape-corner-small);
+  padding-inline: 1.25rem;
+  padding-block: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  box-shadow: var(--bs-box-shadow-sm);
+}
+
+.btn.btn-secondary:hover {
+  filter: brightness(0.97);
+  box-shadow: var(--bs-box-shadow);
+}
+
+.btn.btn-secondary:active {
+  filter: brightness(0.93);
+  box-shadow: var(--bs-box-shadow-sm);
+}
+
+.btn.btn-secondary:focus-visible {
+  outline: 2px solid var(--md-sys-color-primary);
+  outline-offset: 2px;
+}
+
+/* Outlined button: .btn-outline-primary */
+.btn.btn-outline-primary {
+  background-color: transparent;
+  color: var(--md-sys-color-primary);
+  border-radius: var(--md-sys-shape-corner-small);
+  border: 1px solid var(--md-sys-color-outline);
+  padding-inline: 1.25rem;
+  padding-block: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  box-shadow: none;
+}
+
+.btn.btn-outline-primary:hover {
+  background-color: color-mix(in srgb, var(--md-sys-color-primary) 8%, transparent);
+}
+
+.btn.btn-outline-primary:active {
+  background-color: color-mix(in srgb, var(--md-sys-color-primary) 14%, transparent);
+}
+
+.btn.btn-outline-primary:focus-visible {
+  outline: 2px solid var(--md-sys-color-primary);
+  outline-offset: 2px;
+}
+
+/* Text button: .btn-link */
+.btn.btn-link {
+  border-radius: var(--md-sys-shape-corner-small);
+  padding-inline: 0.75rem;
+  padding-block: 0.4rem;
+  color: var(--md-sys-color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn.btn-link:hover {
+  background-color: color-mix(in srgb, var(--md-sys-color-primary) 8%, transparent);
+  text-decoration: none;
+}
+
+.btn.btn-link:active {
+  background-color: color-mix(in srgb, var(--md-sys-color-primary) 14%, transparent);
+}
+
+.btn.btn-link:focus-visible {
+  outline: 2px solid var(--md-sys-color-primary);
+  outline-offset: 2px;
+}
+
+
+/* ============================================
+   CARDS – superficies elevadas M3
+   ========================================= */
+
+.card {
+  border-radius: var(--md-sys-shape-corner-large);
+  border: 1px solid var(--md-sys-color-surface-variant);
+  background-color: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+  box-shadow: var(--bs-box-shadow-sm);
+  overflow: hidden;
+}
+
+.card-header {
+  border-bottom-color: var(--md-sys-color-surface-variant);
+  background-color: color-mix(in srgb, var(--md-sys-color-surface-variant) 40%, var(--md-sys-color-surface) 60%);
+  font-weight: 600;
+}
+
+.card-title {
+  font-size: var(--md-sys-typescale-title-large-size);
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: var(--md-sys-typescale-body-medium-size);
+}
+
+/* Sutil efecto hover para cards clickeables */
+.card:hover {
+  box-shadow: var(--bs-box-shadow-lg);
+  transform: translateY(-1px);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+
+/* ============================================
+   FORM CONTROLS – campos tipo M3
+   ========================================= */
+
+.form-label {
+  font-weight: 500;
+  color: var(--md-sys-color-on-surface);
+  margin-bottom: 0.25rem;
+}
+
+.form-control,
+.form-select {
+  border-radius: var(--md-sys-shape-corner-small);
+  border: 1px solid var(--md-sys-color-outline);
+  background-color: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+  padding-block: 0.55rem;
+  padding-inline: 0.75rem;
+  box-shadow: none;
+}
+
+.form-control::placeholder {
+  color: color-mix(in srgb, var(--md-sys-color-on-surface) 60%, transparent);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--md-sys-color-primary);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--md-sys-color-primary) 40%, transparent),
+    0 0 0 2px color-mix(in srgb, var(--md-sys-color-primary) 15%, transparent);
+}
+
+/* Checkbox / radio */
+.form-check-input {
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 4px;
+  border: 1px solid var(--md-sys-color-outline);
+}
+
+.form-check-input:checked {
+  background-color: var(--md-sys-color-primary);
+  border-color: var(--md-sys-color-primary);
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--md-sys-color-primary) 30%, transparent);
+}
+
+.form-check-label {
+  color: var(--md-sys-color-on-surface);
+  font-size: var(--md-sys-typescale-body-medium-size);
+}
+
+
+/* ============================================
+   NAVBAR – top app bar estilo M3
+   ========================================= */
+
+.navbar.bg-body-tertiary {
+  background-color: var(--md-sys-color-surface);
+  border-bottom: 1px solid var(--md-sys-color-surface-variant);
+}
+
+.navbar .navbar-brand {
+  font-weight: 600;
+  font-size: var(--md-sys-typescale-title-large-size);
+  color: var(--md-sys-color-on-surface);
+}
+
+.navbar .nav-link {
+  color: color-mix(in srgb, var(--md-sys-color-on-surface) 80%, transparent);
+  font-weight: 500;
+  border-radius: 999px;
+  padding-inline: 0.9rem;
+  padding-block: 0.4rem;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  background-color: color-mix(in srgb, var(--md-sys-color-primary) 8%, transparent);
+  color: var(--md-sys-color-primary);
+}
+
+.navbar .nav-link.active {
+  background-color: color-mix(in srgb, var(--md-sys-color-primary) 16%, transparent);
+  color: var(--md-sys-color-primary);
+}
+
+/* ============================================
+   RIPPLE – efecto de toque Material 3
+   ========================================= */
+
+/* Color del ripple según tema */
+:root {
+  --md-sys-ripple-color: rgba(0, 0, 0, 0.18);
+}
+
+:root[data-bs-theme="dark"] {
+  --md-sys-ripple-color: rgba(255, 255, 255, 0.35);
+}
+
+/* Contenedor con ripple */
+.m3-ripple {
+  position: relative;
+  overflow: hidden; /* importante para que el ripple no se salga */
+}
+
+/* El "círculo" del ripple */
+.m3-ripple__wave {
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--md-sys-ripple-color);
+  transform: scale(0);
+  animation: m3-ripple-animation 450ms ease-out;
+  pointer-events: none;
+}
+
+/* Animación del ripple */
+@keyframes m3-ripple-animation {
+  0% {
+    transform: scale(0);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
