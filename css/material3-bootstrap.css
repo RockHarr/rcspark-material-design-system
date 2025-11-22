@@ -1,0 +1,285 @@
+/* =========================================================
+   Design System RCSpark + Material
+   Bootstrap 5 + inspiración Material 3
+   ====================================================== */
+
+:root {
+  /* ===== COLORES M3 SIMPLIFICADOS (LIGHT) ===== */
+  --md-sys-color-primary:              #6750A4;
+  --md-sys-color-on-primary:           #FFFFFF;
+  --md-sys-color-primary-container:    #EADDFF;
+  --md-sys-color-on-primary-container: #21005D;
+
+  --md-sys-color-secondary:            #625B71;
+  --md-sys-color-on-secondary:         #FFFFFF;
+
+  --md-sys-color-tertiary:             #7D5260;
+  --md-sys-color-on-tertiary:          #FFFFFF;
+
+  --md-sys-color-error:                #B3261E;
+  --md-sys-color-on-error:             #FFFFFF;
+
+  --md-sys-color-background:           #FFFBFE;
+  --md-sys-color-on-background:        #1C1B1F;
+
+  --md-sys-color-surface:              #FFFBFE;
+  --md-sys-color-on-surface:           #1C1B1F;
+  --md-sys-color-surface-variant:      #E7E0EC;
+  --md-sys-color-outline:              #79747E;
+
+  /* ===== TIPOGRAFÍA ===== */
+  --md-sys-typescale-font-family: "Roboto", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+
+  --md-sys-typescale-body-large-size:   1rem;      /* 16px */
+  --md-sys-typescale-body-medium-size:  0.875rem;  /* 14px */
+  --md-sys-typescale-title-medium-size: 1rem;      /* 16px */
+  --md-sys-typescale-title-large-size:  1.25rem;   /* 20px */
+  --md-sys-typescale-headline-small-size: 1.5rem;  /* 24px */
+
+  --md-sys-typescale-weight-body:      400;
+  --md-sys-typescale-weight-label:     500;
+  --md-sys-typescale-weight-title:     500;
+  --md-sys-typescale-weight-headline:  600;
+
+  /* ===== RADIOS (SHAPES) M3 ===== */
+  --md-sys-shape-corner-extra-small: 4px;
+  --md-sys-shape-corner-small:       8px;
+  --md-sys-shape-corner-medium:      12px;
+  --md-sys-shape-corner-large:       16px;
+  --md-sys-shape-corner-extra-large: 28px;
+
+  /* ===== ESPACIADO BASE ===== */
+  --md-sys-spacing-base: 8px;
+
+  /* ===== RIPPLE COLOR ===== */
+  --md-sys-ripple-color: rgba(0, 0, 0, 0.18);
+
+  /* =========================================================
+     MAPEO A VARIABLES DE BOOTSTRAP
+     ====================================================== */
+
+  /* Colores base Bootstrap */
+  --bs-body-bg:           var(--md-sys-color-background);
+  --bs-body-color:        var(--md-sys-color-on-background);
+
+  --bs-primary:           var(--md-sys-color-primary);
+  --bs-primary-rgb:       103, 80, 164;
+
+  --bs-secondary:         var(--md-sys-color-secondary);
+  --bs-secondary-rgb:     98, 91, 113;
+
+  --bs-success:           #386A20;
+  --bs-success-rgb:       56, 106, 32;
+
+  --bs-info:              #00639B;
+  --bs-info-rgb:          0, 99, 155;
+
+  --bs-warning:           #FFB300;
+  --bs-warning-rgb:       255, 179, 0;
+
+  --bs-danger:            var(--md-sys-color-error);
+  --bs-danger-rgb:        179, 38, 30;
+
+  --bs-light:             #F5F0FF;
+  --bs-light-rgb:         245, 240, 255;
+  --bs-dark:              #1C1B1F;
+  --bs-dark-rgb:          28, 27, 31;
+
+  /* Texto / links */
+  --bs-link-color:        var(--md-sys-color-primary);
+  --bs-link-hover-color:  #46307c;
+
+  --bs-heading-color:     var(--md-sys-color-on-background);
+
+  /* Bordes y outline */
+  --bs-border-color:      var(--md-sys-color-outline);
+
+  /* Radios Bootstrap ← Shapes M3 */
+  --bs-border-radius-sm:  var(--md-sys-shape-corner-extra-small);
+  --bs-border-radius:     var(--md-sys-shape-corner-small);
+  --bs-border-radius-lg:  var(--md-sys-shape-corner-medium);
+  --bs-border-radius-xl:  var(--md-sys-shape-corner-large);
+  --bs-border-radius-xxl: var(--md-sys-shape-corner-extra-large);
+
+  /* Sombra suave tipo Material */
+  --bs-box-shadow-sm:  0 1px 3px rgba(0, 0, 0, 0.18);
+  --bs-box-shadow:     0 2px 6px rgba(0, 0, 0, 0.20);
+  --bs-box-shadow-lg:  0 4px 12px rgba(0, 0, 0, 0.22);
+
+  /* Tipografía global Bootstrap */
+  --bs-body-font-family:  var(--md-sys-typescale-font-family);
+  --bs-body-font-size:    var(--md-sys-typescale-body-large-size);
+}
+
+/* =========================================================
+   Tema oscuro Material 3 → Bootstrap 5
+   ====================================================== */
+
+:root[data-bs-theme="dark"] {
+  --md-sys-color-primary:              #D0BCFF;
+  --md-sys-color-on-primary:           #381E72;
+  --md-sys-color-primary-container:    #4F378B;
+  --md-sys-color-on-primary-container: #EADDFF;
+
+  --md-sys-color-secondary:            #CCC2DC;
+  --md-sys-color-on-secondary:         #332D41;
+
+  --md-sys-color-tertiary:             #EFB8C8;
+  --md-sys-color-on-tertiary:          #492532;
+
+  --md-sys-color-error:                #F2B8B5;
+  --md-sys-color-on-error:             #601410;
+
+  --md-sys-color-background:           #1C1B1F;
+  --md-sys-color-on-background:        #E6E1E5;
+
+  --md-sys-color-surface:              #1C1B1F;
+  --md-sys-color-on-surface:           #E6E1E5;
+  --md-sys-color-surface-variant:      #49454F;
+  --md-sys-color-outline:              #938F99;
+
+  --md-sys-ripple-color: rgba(255, 255, 255, 0.35);
+
+  --bs-body-bg:           var(--md-sys-color-background);
+  --bs-body-color:        var(--md-sys-color-on-background);
+
+  --bs-primary:           var(--md-sys-color-primary);
+  --bs-primary-rgb:       208, 188, 255;
+
+  --bs-secondary:         var(--md-sys-color-secondary);
+  --bs-secondary-rgb:     204, 194, 220;
+
+  --bs-danger:            var(--md-sys-color-error);
+  --bs-danger-rgb:        242, 184, 181;
+
+  --bs-border-color:      var(--md-sys-color-outline);
+
+  --bs-link-color:        var(--md-sys-color-primary);
+  --bs-link-hover-color:  #f3e3ff;
+
+  --bs-heading-color:     var(--md-sys-color-on-background);
+}
+
+/* ============================================
+   TIPOGRAFÍA GLOBAL RCSpark + Material
+   ========================================= */
+
+body {
+  font-family: var(--md-sys-typescale-font-family);
+  font-size: var(--md-sys-typescale-body-large-size);
+  font-weight: var(--md-sys-typescale-weight-body);
+}
+
+h1, h2 {
+  font-weight: var(--md-sys-typescale-weight-headline);
+}
+
+h3, h4, h5, h6 {
+  font-weight: var(--md-sys-typescale-weight-title);
+}
+
+.navbar .navbar-brand {
+  font-weight: var(--md-sys-typescale-weight-title);
+}
+
+.btn,
+.m3-pill,
+.form-label {
+  font-weight: var(--md-sys-typescale-weight-label);
+}
+
+small,
+.text-muted {
+  font-size: var(--md-sys-typescale-body-medium-size);
+}
+
+/* ============================================
+   BOTONES – Material 3 sobre clases Bootstrap
+   ========================================= */
+
+/* Filled button: .btn-primary */
+.btn.btn-primary {
+  background-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  border: none;
+  border-radius: var(--md-sys-shape-corner-small);
+  padding-inline: 1.25rem;
+  padding-block: 0.6rem;
+  letter-spacing: 0.02em;
+  box-shadow: var(--bs-box-shadow);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.btn.btn-primary:hover {
+  background-color: var(--md-sys-color-primary);
+  filter: brightness(0.96);
+  box-shadow: var(--bs-box-shadow-lg);
+}
+
+.btn.btn-primary:active {
+  background-color: var(--md-sys-color-primary);
+  filter: brightness(0.92);
+  box-shadow: var(--bs-box-shadow-sm);
+}
+
+.btn.btn-primary:focus-visible {
+  outline: 2px solid var(--md-sys-color-primary);
+  outline-offset: 2px;
+}
+
+/* Tonal button: .btn-secondary */
+.btn.btn-secondary {
+  background-color: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary-container);
+  border: none;
+  border-radius: var(--md-sys-shape-corner-small);
+  padding-inline: 1.25rem;
+  padding-block: 0.6rem;
+  letter-spacing: 0.02em;
+  box-shadow: var(--bs-box-shadow-sm);
+}
+
+.btn.btn-secondary:hover {
+  filter: brightness(0.97);
+  box-shadow: var(--bs-box-shadow);
+}
+
+.btn.btn-secondary:active {
+  filter: brightness(0.93);
+  box-shadow: var(--bs-box-shadow-sm);
+}
+
+.btn.btn-secondary:focus-visible {
+  outline: 2px solid var(--md-sys-color-primary);
+  outline-offset: 2px;
+}
+
+/* Outlined button: .btn-outline-primary */
+.btn.btn-outline-primary {
+  background-color: transparent;
+  color: var(--md-sys-color-primary);
+  border-radius: var(--md-sys-shape-corner-small);
+  border: 1px solid var(--md-sys-color-outline);
+  padding-inline: 1.25rem;
+  padding-block: 0.6rem;
+  box-shadow: none;
+}
+
+.btn.btn-outline-primary:hover {
+  background-color: color-mix(in srgb, var(--md-sys-color-primary) 8%, transparent);
+}
+
+.btn.btn-outline-primary:active {
+  background-color: color-mix(in srgb, var(--md-sys-color-primary) 14%, transparent);
+}
+
+.btn.btn-outline-primary:focus-visible {
+  outline: 2px solid var(--md-sys-color-primary);
+  outline-offset: 2px;
+}
+
+/* Text bu*
