@@ -1,0 +1,27 @@
+{
+  "name": "rcspark-material-design-system",
+  "version": "1.0.0",
+  "description": "> ⚠️ Nota > > Este proyecto se creó con fines de aprendizaje en el contexto del curso. > Está pensado para que cualquiera pueda inspirarse, copiar partes, > modificarlas y adaptarlas a sus propias tareas y proyectos.   > La idea no es que todos entreguemos lo mismo, sino que tengamos una base > más bonita y usable sobre la cual crear cosas propias.",
+  "main": "index.js",
+  "scripts": {
+    "sass:dev": "sass --watch --load-path=node_modules src/scss:css",
+    "sass:build": "sass --no-source-map --style=compressed --load-path=node_modules src/scss/rcspark.scss css/rcspark.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RockHarr/rcspark-material-design-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RockHarr/rcspark-material-design-system/issues"
+  },
+  "homepage": "https://github.com/RockHarr/rcspark-material-design-system#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  },
+  "devDependencies": {
+    "sass": "^1.97.1"
+  }
+}

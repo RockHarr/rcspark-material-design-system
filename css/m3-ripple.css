@@ -1,0 +1,21 @@
+/* Tiny ripple helpers for demo components */
+.m3-ripple--container {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.m3-ripple__wave {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  pointer-events: none;
+  background: rgba(0,0,0,0.12);
+  animation: m3-ripple 600ms ease-out;
+}
+
+@keyframes m3-ripple {
+  to {
+    transform: scale(1);
+    opacity: 0;
+  }
+}

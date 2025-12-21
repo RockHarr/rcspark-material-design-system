@@ -1,0 +1,13 @@
+/* src/scss/themes/_color-modes.scss */
+
+/* Light (default) */
+:root {
+  --rc-surface: #{map-get($rc-colors-light, surface)};
+  --rc-on-surface: #{map-get($rc-colors-light, on-surface)};
+}
+
+/* Dark */
+[data-bs-theme="dark"] {
+  --rc-surface: #{map-get($rc-colors-dark, surface)};
+  --rc-on-surface: #{map-get($rc-colors-dark, on-surface)};
+}

@@ -1,0 +1,22 @@
+/* src/scss/abstracts/_tokens.scss */
+$rc-colors-light: (
+  primary: #6750A4,
+  secondary: #625B71,
+  success: #146C43,
+  danger: #B3261E,
+  warning: #F9AB00,
+  info: #0DCAF0,
+  surface: #FFFBFE,
+  on-surface: #1C1B1F
+);
+
+$rc-colors-dark: (
+  primary: #D0BCFF,
+  secondary: #CCC2DC,
+  success: #75B798,
+  danger: #F2B8B5,
+  warning: #FBC02D,
+  info: #66D9EF,
+  surface: #1C1B1F,
+  on-surface: #E6E1E5
+);

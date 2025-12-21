@@ -1,0 +1,24 @@
+/* src/scss/abstracts/_bootstrap-overrides.scss */
+$primary: map-get($rc-colors-light, primary);
+$secondary: map-get($rc-colors-light, secondary);
+$success: map-get($rc-colors-light, success);
+$danger: map-get($rc-colors-light, danger);
+$warning: map-get($rc-colors-light, warning);
+$info: map-get($rc-colors-light, info);
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "danger": $danger,
+  "warning": $warning,
+  "info": $info,
+  "light": #f8f9fa,
+  "dark": #212529
+);
+
+/* Forma/“Material feel” */
+$border-radius: .75rem;
+$border-radius-lg: 1rem;
+$btn-border-radius: 999px;
+$card-border-radius: 1.25rem;

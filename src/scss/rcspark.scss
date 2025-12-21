@@ -1,0 +1,20 @@
+/* src/scss/rcspark.scss */
+
+/* Bootstrap functions primero */
+@import "bootstrap/scss/functions";
+
+/* (Opcional por ahora) tus overrides antes de variables de Bootstrap */
+/* @import "abstracts/tokens"; */
+/* @import "abstracts/bootstrap-overrides"; */
+
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+/* Bootstrap completo */
+@import "bootstrap/scss/bootstrap";
+
+/* Tu capa (cuando la tengas) */
+/* @import "base/root"; */
+/* @import "components/buttons"; */
